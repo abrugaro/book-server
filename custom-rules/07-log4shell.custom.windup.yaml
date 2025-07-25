@@ -1,0 +1,38 @@
+- category: mandatory
+  customVariables: []
+  description: Log4j import with log4shell vulnerability identified
+  effort: 1
+  labels:
+  - konveyor.io/include=always
+  links:
+  - title: Apache Log4J Security Vulnerabilities
+    url: https://logging.apache.org/log4j/2.x/security.html
+  - title: CVE-2021-44228
+    url: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-44228
+  message: You must upgrade to Log4j 2.15.0 to remove the log4shell vulnerability
+    identified in CVE-2021-44228.
+  ruleID: log4shell-identifier-00001
+  when:
+    java.dependency:
+      lowerbound: 2.0-beta9
+      name: org.apache.logging.log4j.log4j-core
+      upperbound: 2.14.1
+- category: mandatory
+  customVariables: []
+  description: Log4j binary with log4shell vulnerability identified
+  effort: 5
+  labels:
+  - konveyor.io/include=always
+  links:
+  - title: Apache Log4J Security Vulnerabilities
+    url: https://logging.apache.org/log4j/2.x/security.html
+  - title: CVE-2021-44228
+    url: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-44228
+  message: You must upgrade to Log4j 2.15.0 to remove the log4shell vulnerability
+    identified in CVE-2021-44228.
+  ruleID: log4shell-identifier-00002
+  when:
+    java.dependency:
+      lowerbound: 2.0-beta9
+      name: org.apache.logging.log4j.log4j-core
+      upperbound: 2.14.1

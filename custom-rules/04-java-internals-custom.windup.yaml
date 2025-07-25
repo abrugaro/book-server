@@ -1,0 +1,26 @@
+- category: mandatory
+  customVariables: []
+  description: custom rule identified java.awt.Font.getFont()
+  effort: 3
+  labels:
+  - konveyor.io/include=always
+  links: []
+  message: '`java.awt.Font.getFont()` referened in this class'
+  ruleID: java-internals-custom-getFont
+  when:
+    java.referenced:
+      location: METHOD_CALL
+      pattern: java.awt.Font.getFont*
+- category: mandatory
+  customVariables: []
+  description: custom rule identified java.awt.Font.getPeer()
+  effort: 3
+  labels:
+  - konveyor.io/include=always
+  links: []
+  message: '`java.awt.Font.getPeer()` referenced in this class'
+  ruleID: java-internals-custom-getPeer
+  when:
+    java.referenced:
+      location: METHOD_CALL
+      pattern: java.awt.Font.getPeer*
