@@ -1,0 +1,32 @@
+- customVariables: []
+  description: JBoss Web Application Descriptor
+  effort: 0
+  labels:
+  - konveyor.io/source=customSource
+  - konveyor.io/target=azureAppservice
+  links: []
+  message: 'Fist message: The class-loading element is no longer valid in the jboss-web.xml
+    file.'
+  ruleID: JBoss5-web-class-loading_001
+  tag:
+  - JBoss Web Application Descriptor
+  when:
+    builtin.xml:
+      namespaces: {}
+      xpath: jboss-web/class-loading
+- customVariables: []
+  description: JBoss Web Application Descriptor
+  effort: 0
+  labels:
+  - konveyor.io/source=customSource
+  - konveyor.io/target=azureAppservice
+  links: []
+  message: 'Second message: The class-loading element is no longer valid in the jboss-web.xml
+    file.'
+  ruleID: JBoss5-web-class-loading_002
+  tag:
+  - JBoss Web Application Descriptor
+  when:
+    builtin.xml:
+      namespaces: {}
+      xpath: jboss-web/class-loading
