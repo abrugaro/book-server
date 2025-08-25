@@ -3,7 +3,8 @@
   description: custom rule identified java.awt.Font.getFont()
   effort: 3
   labels:
-  - konveyor.io/include=always
+    - konveyor.io/source=customSource
+    - konveyor.io/include=always
   links: []
   message: '`java.awt.Font.getFont()` referened in this class'
   ruleID: java-internals-custom-getFont

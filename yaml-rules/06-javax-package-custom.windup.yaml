@@ -3,6 +3,7 @@
   description: CUSTOM RULE for javax.* package import
   effort: 1
   labels:
+  - konveyor.io/source=customSource
   - konveyor.io/include=always
   links:
   - title: Renamed Packages

@@ -1,17 +1,18 @@
 - category: potential
   customVariables: []
-  description: CUSTOM RULE for javax.* package import
+  description: CUSTOM RULE for org.springframework.web.bind.annotation.RestController import
   effort: 1
   labels:
+  - konveyor.io/source=customSource
   - konveyor.io/target=phil7
   - konveyor.io/target=phil
   - konveyor.io/source
   links:
   - title: Renamed Packages
     url: https://github.com/wildfly-extras/batavia/blob/master/impl/ecl/src/main/resources/org/wildfly/extras/transformer/eclipse/jakarta-renames.properties
-  message: '`javax.*` packages must be renamed to `jakarta.*` for Jakarta EE9 compatibility.'
-  ruleID: javax-package-custom-target-00001
+  message: 'CUSTOM RULE THAT SHOULD FIRE IN BOOKSERVER APP'
+  ruleID: 05-custom-spring-import
   when:
     java.referenced:
       location: IMPORT
-      pattern: javax*
+      pattern: org.springframework.web.bind.annotation.RestController

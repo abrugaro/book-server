@@ -3,6 +3,7 @@
   description: Test-002 Remote Exception
   effort: 0
   labels:
+  - konveyor.io/source=customSource
   - konveyor.io/include=always
   - tag
   links:

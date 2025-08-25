@@ -1,6 +1,7 @@
-- customVariables: []
+- category: mandatory
+  customVariables: []
   description: JBoss Web Application Descriptor
-  effort: 0
+  effort: 5
   labels:
   - konveyor.io/source=customSource
   - konveyor.io/target=azureAppservice
@@ -14,9 +15,10 @@
     builtin.xml:
       namespaces: {}
       xpath: jboss-web/class-loading
-- customVariables: []
+- category: mandatory
+  customVariables: []
   description: JBoss Web Application Descriptor
-  effort: 0
+  effort: 3
   labels:
   - konveyor.io/source=customSource
   - konveyor.io/target=azureAppservice

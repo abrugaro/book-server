@@ -3,6 +3,7 @@
   description: jackson-databind identified in the pom.xml
   effort: 0
   labels:
+  - konveyor.io/source=customSource
   - konveyor.io/include=always
   - tag
   links:
